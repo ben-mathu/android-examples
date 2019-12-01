@@ -35,7 +35,9 @@ Main repository containing all the example apps demonstrating features/functiona
 1. [CheckIfPhoneOrTablet](/CheckIfPhoneOrTablet) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CheckIfPhoneOrTablet)
 1. [CheckIfScreenLocked](/CheckIfScreenLocked) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CheckIfScreenLocked)
 1. [ChromeCustomTabs](/ChromeCustomTabs) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/ChromeCustomTabs)
+1. [CleanProject](/CleanProject) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CleanProject)
 1. [CollapsibleToolbar](/CollapsibleToolbar) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CollapsibleToolbar)
+1. [CommonConfigForModules](/CommonConfigForModules) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CommonConfigForModules)
 1. [CompileOnly](/CompileOnly) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CompileOnly)
 1. [CustomBroadcastPermissions](/CustomBroadcastPermissions) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CustomBroadcastPermissions)
 1. [CustomOnboardingIntro](/CustomOnboardingIntro) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/CustomOnboardingIntro)
@@ -87,6 +89,7 @@ Main repository containing all the example apps demonstrating features/functiona
 1. [SnapHelper](/SnapHelper) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/SnapHelper)
 1. [SpeechRecognition](/SpeechRecognition) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/SpeechRecognition)
 1. [SplashScreen](/SplashScreen) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/SplashScreen)
+1. [SplitSigninConfig](/SplitSigninConfig) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/SplitSigninConfig)
 1. [TabLayout](/TabLayout) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/TabLayout)
 1. [TextToSpeech](/TextToSpeech) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/TextToSpeech)
 1. [TranslucentStatusBar](/TranslucentStatusBar) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/TranslucentStatusBar)
@@ -106,6 +109,7 @@ Main repository containing all the example apps demonstrating features/functiona
 1. [UsingMPChartsLib](/UsingMPChartsLib) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingMPChartsLib)
 1. [UsingOpenNLP](/UsingOpenNLP) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingOpenNLP)
 1. [UsingParceler](/UsingParceler) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingParceler)
+1. [UsingParcelize](/UsingParcelize) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingParcelize)
 1. [UsingPercentSupportLib](/UsingPercentSupportLib) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingPercentSupportLib)
 1. [UsingPocketSphinxForVoiceRecognition](/UsingPocketSphinxForVoiceRecognition) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingPocketSphinxForVoiceRecognition)
 1. [UsingRealmDB](/UsingRealmDB) [![download](img/ic_download.png)](https://kinolien.github.com/gitzip/?download=https://github.com/nisrulz/android-examples/tree/master/UsingRealmDB)
@@ -150,12 +154,14 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
           ```
           ./gradlew wrapper --gradle-version <version_name>
           ```
-          i.e `./gradlew wrapper --gradle-version 4.0`
+          i.e `./gradlew wrapper --gradle-version 6.0.1`
 
       + Use `ext` variables as defined in [`dependencies.gradle`](/dependencies.gradle), in your `build.gradle` files to make sure all apps are in sync with configurations and dependencies. Take a look [here](/DataBinding/app/build.gradle) and [here](/DataBinding/build.gradle)
       
       + Use the package name of the format `github.nisrulz.sample.*` where `*` is the example you are adding to the repo. I am trying to follow a set standard in the repo, please adhere to that.
   7. Have fun!
+
+  > NOTE: There is a quick bootstrapping **cookiecutter** template to create an Android example project that adheres to all wiring up and standards for this repo. [Read how to use use it here](/cookiecutter-android-example)
 
 ## Extra
 Since the repo is pretty large now , I am sure a lot of you guys would like to download only some of the projects. To tackle that I came across this cool tool - [Gitzip](https://github.com/KinoLien/gitzip) (All credits to the [author](https://github.com/KinoLien), really cool work). To download a specific project
@@ -173,7 +179,6 @@ Since the repo is pretty large now , I am sure a lot of you guys would like to d
 
 > If you found these examples helpful or you learned something from their source code and want to thank me, consider buying me a cup of :coffee:
 >  + [PayPal](https://www.paypal.me/nisrulz/5usd)
->  + Bitcoin Address: 13PjuJcfVW2Ad81fawqwLtku4bZLv1AxCL
 
 License
 =======
